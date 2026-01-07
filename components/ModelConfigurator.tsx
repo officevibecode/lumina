@@ -48,10 +48,10 @@ const ModelConfigurator: React.FC<Props> = ({ settings, setSettings, language })
   };
 
   const modes: { id: ModelMode; label: string; icon: string }[] = [
-    { id: 'ai_auto', label: t.modes.ai_auto, icon: '✨' },
-    { id: 'ai_prompt', label: t.modes.ai_prompt, icon: '📝' },
-    { id: 'upload_model', label: t.modes.upload_model, icon: '👤' },
-    { id: 'upload_self', label: t.modes.upload_self, icon: '📸' }
+    { id: 'ai_auto', label: t.modes.ai_auto, icon: '/ia.svg' },
+    { id: 'ai_prompt', label: t.modes.ai_prompt, icon: '/prompt.svg' },
+    { id: 'upload_model', label: t.modes.upload_model, icon: '/foto.svg' },
+    { id: 'upload_self', label: t.modes.upload_self, icon: '/minha-foto.svg' }
   ];
 
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -80,7 +80,7 @@ const ModelConfigurator: React.FC<Props> = ({ settings, setSettings, language })
                 : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50 hover:border-gold'
             }`}
           >
-            <span className="text-2xl">{mode.icon}</span>
+            <img src={mode.icon} alt={mode.label} className="w-8 h-8" />
             <span className="text-[10px] font-bold uppercase tracking-wider">{mode.label}</span>
           </button>
         ))}
