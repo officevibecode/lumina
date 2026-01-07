@@ -1,0 +1,7 @@
+{
+  "name": "LUMINA Studio",
+  "description": "Premium advertising studio for high-end jewelry. Create professional editorial photos and cinematic videos from your product images using advanced AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
